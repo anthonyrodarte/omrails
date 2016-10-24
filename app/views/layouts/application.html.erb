@@ -16,9 +16,16 @@
       <ul class="nav navbar-nav">
         <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
-        <li class="nav-item"><%= link_to "Contact", contactus_path, class: "nav-link" %></li>
+        <li class="nav-item"><%= link_to "Contact", contactus_path, class: "nav-link"
+           %></li>
       </ul>
+      </div>
     </nav>
+
+    <!-- Flash Messages -->
+    <% flash.each do |name, message| %>
+      <%= content_tag(:div, message, class: "alert alert-info #{name}") %>
+      <% end %>
 
     <!-- Page Content -->
     <div class="container">
