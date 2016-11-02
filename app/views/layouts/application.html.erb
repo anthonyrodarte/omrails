@@ -20,7 +20,7 @@
         <% if user_signed_in? %>
         <li class="nav-item float-md-right"><%= link_to "Log out", sign_out_path, method: :delete, class: "nav-link" %></li>
         <% else %>
-           <li class="nav-item float-md-right"><%= link_to "Sign up", sign_up_path, class: "nav-link btn btn-primary" %></li>
+           <li class="nav-item float-md-right"><%= link_to "Sign up", sign_up_path, class: "btn btn-primary" %></li>
            <li class="nav-item float-md-right"><%= link_to "Sign in", sign_in_path, class: "nav-link" %></li>
         <% end %>
       </ul>
