@@ -14,7 +14,7 @@
     <tbody>
       <% @reviews.each do |review| %>
         <tr>
-          <td><%= review.user.email %></td>
+          <td><%= review.user.username %></td>
           <td><%= review.title %></td>
           <td><%= link_to 'Show', review %></td>
           <% if review.user == current_user %>
